@@ -12,15 +12,15 @@ metadata:
   labels:
     addon.harvesterhci.io/experimental: "true"
 spec:
-  enabled: false
+  enabled: true
   repo: https://charts.loft.sh
   version: "v0.30.0"
   chart: vcluster
   valuesContent: |-
     global:
-      hostname: ""
+      hostname: "rancher.crust.life"
       rancherVersion: v2.13.1
-      bootstrapPassword: ""
+      bootstrapPassword: "Changeme123"
 
     sync:
       toHost:
