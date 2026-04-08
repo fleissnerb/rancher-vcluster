@@ -12,7 +12,7 @@ metadata:
   labels:
     addon.harvesterhci.io/experimental: "true"
 spec:
-  enabled: true
+  enabled: false
   repo: https://charts.loft.sh
   version: "v0.30.0"
   chart: vcluster
@@ -112,3 +112,4 @@ spec:
                 global.cattle.psp.enabled: "false"
                 bootstrapPassword: {{ .Values.global.bootstrapPassword }}
               helmVersion: v3
+
