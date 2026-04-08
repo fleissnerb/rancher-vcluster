@@ -34,7 +34,7 @@ spec:
           image:
             registry: ""
             repository: "rancher/k3s"
-            tag: "v1.34.6+k3s1"
+            tag: "v1.34.6-k3s1"
           securityContext: {}
           resources:
             limits:
