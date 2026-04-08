@@ -14,12 +14,12 @@ metadata:
 spec:
   enabled: true
   repo: https://charts.loft.sh
-  version: "v0.33.1"
+  version: "v0.30.0"
   chart: vcluster
   valuesContent: |-
     global:
       hostname: "rancher.crust.life"
-      rancherVersion: v2.13.4
+      rancherVersion: v2.13.1
       bootstrapPassword: "Changeme123"
 
     sync:
@@ -34,7 +34,7 @@ spec:
           image:
             registry: ""
             repository: "rancher/k3s"
-            tag: "v1.34.6-k3s1"
+            tag: "v1.34.2-k3s1"
           securityContext: {}
           resources:
             limits:
@@ -53,7 +53,7 @@ spec:
         image:
           registry: "ghcr.io"
           repository: "loft-sh/vcluster-pro"
-          tag: "0.33.1"
+          tag: "0.30.0"
         resources:
           # Limits are resource limits for the container
           limits:
@@ -90,7 +90,7 @@ spec:
               targetNamespace: cert-manager
               repo: https://charts.jetstack.io
               chart: cert-manager
-              version: v1.19.4
+              version: v1.5.1
               helmVersion: v3
               set:
                 installCRDs: "true"
@@ -112,4 +112,3 @@ spec:
                 global.cattle.psp.enabled: "false"
                 bootstrapPassword: {{ .Values.global.bootstrapPassword }}
               helmVersion: v3
-
