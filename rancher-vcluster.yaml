@@ -19,7 +19,7 @@ spec:
   valuesContent: |-
     global:
       hostname: "rancher.crust.life"
-      rancherVersion: v2.13.1
+      rancherVersion: v2.13.4
       bootstrapPassword: "Changeme123"
 
     sync:
